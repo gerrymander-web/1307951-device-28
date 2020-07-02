@@ -17,7 +17,7 @@
 						 height="35">
 			</a>
 			
-			<form action="#">
+			<form action="#" method="get">
 				<label for="search" 
 					 	 class="search"></label>
 				<input type="search" 
@@ -93,6 +93,76 @@
 		
 		<section class="filters">
 			<h2>Фильтр:</h2>
+			<form action="#" 
+						method="get">
+			
+				<fieldset>
+					<legend>Стоимость</legend>
+				</fieldset>
+
+				<fieldset>
+					<legend>Цвет</legend>
+					<ul>
+						<li>
+							<input type="checkbox" 
+										 id="black" 
+										 name="black"
+										 checked>
+							<label for="black">Чёрный</label>
+						</li>
+						<li>
+							<input type="checkbox" 
+										 id="white" 
+										 name="white">
+							<label for="white">Белый</label>
+						</li>
+						<li>
+							<input type="checkbox" 
+										 id="blue" 
+										 name="blue"
+										 checked>
+							<label for="blue">Синий</label>
+						</li>
+						<li>
+							<input type="checkbox" 
+										 id="red" 
+										 name="red"
+										 checked>
+							<label for="red">Красный</label>
+						</li>
+						<li>
+							<input type="checkbox" 
+										 id="pink" 
+										 name="pink">
+							<label for="pink">Розовый</label>
+						</li>
+					</ul>
+				</fieldset>
+
+				<fieldset>
+					<legend>Bluetooth</legend>
+					<ul>
+						<li>
+							<input type="radio" 
+										 name="bluetooth" 
+										 id="filter-bluetooth-yes" 
+										 value="yes"
+										 checked>
+							<label for="filter-bluetooth-yes">Есть</label>
+						</li>
+						<li>
+							<input type="radio" 
+										 name="bluetooth" 
+										 id="filter-bluetooth-no" 
+										 value="no">
+							<label for="filter-bluetooth-no">Нет</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit" 
+								aria-label="Показать">Показать</button>
+			</form>
+
 		</section>
 
 		<section>
@@ -100,6 +170,7 @@
 
 			<section class="sorting">
 				<h3>Сортировка:</h3>
+				
 			</section>
 			
 			<section class="item-list">
